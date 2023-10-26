@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-std');
+@import 'main';
+@import 'fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+}
+
+[data-theme="dark"]{
+  --menu-color: #01102c;
+  --pri-color: #f8f8f8;
+  --sec-color: #01102c;
+  --dark-blue: #011E55;
+  background: var(--sec-color);
+  // color-scheme: dark;
+  section, .hero-inner,footer,.nav a,.nav2 a{
+    color: var(--pri-color);
+  }
+  .hero-inner{
+    .btnBox{
+      a:first-child{
+        background: #011E55;
+      }
+      a:first-child:hover{
+        background: var(--pri-color);
+      }
+      a:last-child{
+        background: #018181;
+        color: #F8F8F8;
+      }
+      a:last-child:hover{
+        color: #018181;
+        background: var(--pri-color);
+      }
+    }
+  }
+  .about{
+    a{
+      background: var(--pri-color);
+    }
+    a:hover{
+      background-color: var(--dark-blue);
+      color: var(--pri-color);
+    }
+  }
+  .testimonials{
+    .wrapper{
+      .card{
+        color: var(--sec-color);
+      }
+    }
+  }
+  .get-start{
+    a:hover{
+      background-color: var(--dark-blue);
+      color: var(--pri-color);
+    }
+    .wrapper{
+      .card{
+        color: var(--pri-color);
+        .number{
+          color: var(--dark-blue);
+        }
+      }
+    }
+  }
+  .usecases{
+    background: var(--sec-color);
+  }
+  .part-carousel{
+    .card{
+      background: var(--pri-color);
+
+    }
+  }
+  .signup{
+    .wrapper{
+      color: var(--pri-color);
+      a{
+        background: var(--pri-color);
+      }
+      a:hover{
+        background-color: var(--dark-blue);
+        color: var(--pri-color);
+      }
+    }
+  }
+  color: var(--pri-color);
+}
+
+:root {
+  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenir LT Std', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --pri-color: #003F74;
+  --sec-color: #fff;
+  --acc-grey2: #F8F8F8;
+  --menu-color: #d1cfcf;
+  --acc-grey: #303846;
+  --dark-blue: #011E55;
+  --acc-green: #018181;
+
+  // color-scheme: light;
+  color: var(--pri-color);
+  // background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.btn {
+  background: var(--dark-blue);
+  color: var(--sec-color);
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-family: 'ceraProBlack';
+  font-size: 20px;
+}
+
+h1,h3,h4 {
+  font-family: 'ceraProBlack';
+  line-height: 1.2;
+}
+
+h2.sm {
+  font-family: 'ceraProBlack';
+  font-size: 32px;
+}
+
+section{
+  margin-top: 10rem;
+}
